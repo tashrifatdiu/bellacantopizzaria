@@ -1,0 +1,175 @@
+.contact {
+  padding: 8rem 0;
+  background: #0f0f0f;
+  position: relative;
+  z-index: 100;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #d4af37;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.info-item h3 {
+  color: #d4af37;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.info-item p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.info-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: #d4af37;
+}
+
+/* Delivery Platforms */
+.delivery-platforms {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.platform-link {
+  display: inline-block;
+  background: #1a1a1a;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.platform-link:hover {
+  background: #d4af37;
+  color: #000;
+  transform: translateX(5px);
+  border-color: #d4af37;
+}
+
+/* Social Links in Contact */
+.info-item .social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+}
+
+.social-link:hover {
+  background: #d4af37;
+  color: #000;
+  transform: translateY(-3px);
+  border-color: #d4af37;
+}
+
+.reservation-form {
+  background: #1a1a1a;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.reservation-form h3 {
+  color: #d4af37;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.reservation-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reservation-form input,
+.reservation-form select {
+  padding: 1rem;
+  background: #0a0a0a;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.reservation-form input::placeholder {
+  color: #666;
+}
+
+.reservation-form button {
+  background: linear-gradient(135deg, #d4af37, #f4d03f);
+  color: black;
+  border: none;
+  padding: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.reservation-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 5rem 0;
+  }
+  
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+  
+  .reservation-form {
+    padding: 2rem;
+  }
+}
