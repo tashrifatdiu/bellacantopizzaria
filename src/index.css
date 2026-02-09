@@ -4,18 +4,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
   background-color: #000000;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  font-style: italic;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Force italic on all text elements */
+h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, select, textarea, label, li {
+  font-style: italic !important;
+}
+
+/* Prevent horizontal scroll on mobile */
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }

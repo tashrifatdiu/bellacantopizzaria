@@ -1,11 +1,16 @@
 .App {
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 /* Disable smooth scrolling for better performance with scroll animations */
@@ -17,4 +22,6 @@ html {
 section {
   position: relative;
   z-index: 100;
+  width: 100%;
+  overflow-x: hidden;
 }

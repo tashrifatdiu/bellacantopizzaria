@@ -38,6 +38,25 @@ export const translations = {
     salads: "Salads",
     desserts: "Desserts",
     
+    // Gallery
+    gallery: "Our Gallery",
+    gallerySubtitle: "A Visual Journey Through Our Culinary Masterpieces",
+    viewDish: "View Dish",
+    
+    // Features
+    whyChooseUs: "Why Choose Us",
+    featuresSubtitle: "Experience the Authentic Taste of Italy in Every Bite",
+    feature1Title: "Traditional Wood-Fired Oven",
+    feature1Desc: "Our authentic Italian oven creates the perfect crispy crust with smoky flavors",
+    feature2Title: "Fresh Premium Ingredients",
+    feature2Desc: "We use only the finest imported Italian ingredients for authentic taste",
+    feature3Title: "Handcrafted Perfection",
+    feature3Desc: "Every dish is carefully prepared by our expert Italian chefs",
+    feature4Title: "Family Recipes",
+    feature4Desc: "Traditional recipes passed down through generations of Italian cooking",
+    feature5Title: "Cozy Atmosphere",
+    feature5Desc: "Enjoy your meal in our warm and welcoming Italian-style dining space",
+    
     // Contact
     visitUs: "Visit Us",
     address: "Address",
@@ -74,18 +93,37 @@ export const translations = {
     pizzaOf: "Pizza {current} de {total}",
     
     // About
-    ourStory: "Nossa História",
-    aboutText1: "Estamos aqui com a magia dos sabores italianos em Lisboa. Venham para desfrutar do fogo queimado pizzas e massa italiana deliciosa.",
-    aboutText2: "Estamos a fazer a comida italiana com os melhores ingredientes italianos. O forno é tradicional. Assim, pode provar a pizza de fogo a arder em Lisboa.",
-    aboutText3: "Todos os ingredientes são de alta qualidade e de melhor qualidade. Espero que gostes e que voltes a ter o sabor.",
+    ourStory: "A Nossa História",
+    aboutText1: "Estamos aqui com a magia dos sabores italianos em Lisboa. Venham desfrutar de pizzas queimadas no forno e massa italiana deliciosa.",
+    aboutText2: "Fazemos comida italiana com os melhores ingredientes italianos. O forno é tradicional. Assim, pode provar a pizza de fogo a arder em Lisboa.",
+    aboutText3: "Todos os ingredientes são de alta qualidade e da melhor qualidade. Esperamos que goste e que volte para saborear.",
     
     // Menu
-    ourMenu: "Nosso Menu",
+    ourMenu: "O Nosso Menu",
     starters: "Entradas",
     pizza: "Pizza",
     pasta: "Massa",
     salads: "Saladas",
     desserts: "Sobremesas",
+    
+    // Gallery
+    gallery: "A Nossa Galeria",
+    gallerySubtitle: "Uma Viagem Visual Através das Nossas Obras-Primas Culinárias",
+    viewDish: "Ver Prato",
+    
+    // Features
+    whyChooseUs: "Porquê Escolher-nos",
+    featuresSubtitle: "Experimente o Sabor Autêntico da Itália em Cada Mordida",
+    feature1Title: "Forno Tradicional a Lenha",
+    feature1Desc: "O nosso autêntico forno italiano cria a crosta perfeita e crocante com sabores fumados",
+    feature2Title: "Ingredientes Premium Frescos",
+    feature2Desc: "Usamos apenas os melhores ingredientes italianos importados para um sabor autêntico",
+    feature3Title: "Perfeição Artesanal",
+    feature3Desc: "Cada prato é cuidadosamente preparado pelos nossos chefs italianos especializados",
+    feature4Title: "Receitas de Família",
+    feature4Desc: "Receitas tradicionais transmitidas através de gerações de culinária italiana",
+    feature5Title: "Ambiente Acolhedor",
+    feature5Desc: "Desfrute da sua refeição no nosso espaço caloroso e acolhedor de estilo italiano",
     
     // Contact
     visitUs: "Visite-nos",
@@ -97,7 +135,7 @@ export const translations = {
     orderOnline: "Encomendar Online",
     followUs: "Siga-nos",
     makeReservation: "Fazer uma Reserva",
-    yourName: "Seu Nome",
+    yourName: "O Seu Nome",
     partySize: "Número de Pessoas",
     person: "Pessoa",
     people: "Pessoas",

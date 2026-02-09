@@ -5,15 +5,16 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('Starters');
+  const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
   const { t } = useLanguage();
 
   // Map categories to online images
   const categoryImages = {
-    "Starters": "https://images.unsplash.com/photo-1541529086526-db283c563270?w=800&q=80", // Bruschetta/appetizers
-    "Pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80", // Pizza
-    "Pasta": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80", // Pasta
-    "Salads": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80", // Fresh salad
-    "Desserts": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800&q=80" // Desserts
+    "Starters": "https://images.unsplash.com/photo-1541529086526-db283c563270?w=800&q=80",
+    "Pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80",
+    "Pasta": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80",
+    "Salads": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+    "Desserts": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800&q=80"
   };
 
   const menuData = {
@@ -67,6 +68,13 @@ const Menu = () => {
 
   const categories = Object.keys(menuData);
 
+  const handleCategoryChange = (category) => {
+    const currentIndex = categories.indexOf(activeCategory);
+    const newIndex = categories.indexOf(category);
+    setDirection(newIndex > currentIndex ? 1 : -1);
+    setActiveCategory(category);
+  };
+
   return (
     <section id="menu" className="menu">
       <div className="container">
@@ -85,64 +93,95 @@ const Menu = () => {
             <button
               key={category}
               className={`menu-tab ${activeCategory === category ? 'active' : ''}`}
-              onClick={() => setActiveCategory(category)}
+              onClick={() => handleCategoryChange(category)}
             >
               {t(category.toLowerCase())}
             </button>
           ))}
         </div>
 
-        {/* Menu Items */}
+        {/* Category Image - Between Tabs and Menu Book */}
         <motion.div 
-          className="menu-items-container"
+          className="category-image-wrapper"
           key={activeCategory}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
         >
-          {/* Floating Category Image */}
-          <motion.div 
-            className="category-image-container"
-            initial={{ opacity: 0, scale: 0.8, y: 50 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
+          <div className="category-image-container">
             <motion.img 
               src={categoryImages[activeCategory]} 
               alt={activeCategory}
               className="category-image"
-              animate={{ 
-                y: [0, -20, 0],
-                rotate: [0, 2, -2, 0]
-              }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ 
-                duration: 6,
-                repeat: Infinity,
-                ease: "easeInOut"
+                duration: 0.6,
+                ease: "easeOut"
               }}
             />
             <div className="image-glow"></div>
-          </motion.div>
-
-          <div className="menu-items">
-            {menuData[activeCategory].map((item, index) => (
-              <motion.div
-                key={index}
-                className="menu-item"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="item-header">
-                  <h4>{item.name}</h4>
-                  <span className="price">{item.price}</span>
-                </div>
-                <p>{item.description}</p>
-              </motion.div>
-            ))}
           </div>
+        </motion.div>
+
+        {/* Menu Items */}
+        <motion.div 
+          className="menu-items-container"
+          key={`menu-${activeCategory}`}
+        >
+          {/* Menu Book with Page Turn Animation from Left */}
+          <motion.div 
+            className="menu-items"
+            initial={{ 
+              rotateY: direction === 1 ? -90 : 90,
+              opacity: 0,
+              x: direction === 1 ? -100 : 100
+            }}
+            animate={{ 
+              rotateY: 0,
+              opacity: 1,
+              x: 0
+            }}
+            exit={{ 
+              rotateY: direction === 1 ? 90 : -90,
+              opacity: 0,
+              x: direction === 1 ? 100 : -100
+            }}
+            transition={{ 
+              duration: 0.9,
+              ease: [0.43, 0.13, 0.23, 0.96]
+            }}
+            style={{
+              transformStyle: "preserve-3d",
+              transformOrigin: direction === 1 ? "left center" : "right center"
+            }}
+          >
+            {menuData[activeCategory].map((item, index) => {
+              const isLeftColumn = index % 2 === 0;
+              return (
+                <motion.div
+                  key={index}
+                  className="menu-item"
+                  initial={{ 
+                    opacity: 0,
+                    y: 20
+                  }}
+                  animate={{ 
+                    opacity: 1,
+                    y: 0
+                  }}
+                  transition={{ 
+                    duration: 0.5, 
+                    delay: 0.4 + (index * 0.06),
+                    ease: "easeOut"
+                  }}
+                >
+                  <div className="item-header">
+                    <h4>{item.name}</h4>
+                    <span className="price">{item.price}</span>
+                  </div>
+                  <p>{item.description}</p>
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import pizzaLogo from '../assets/images/pizzalogo.jpeg';
+import pizzaLogo from '../assets/images/pizzalogo.png';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {

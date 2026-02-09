@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './About.css';
-import aboutImage from '../assets/images/02-03.jpg';
+import aboutImage from '../assets/images/ourstory.jpeg';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const About = () => {
@@ -36,17 +36,17 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <motion.img 
-              src={aboutImage} 
-              alt="Bella Canto Pizzaria" 
-              style={{
-                width: '100%', 
-                height: '450px', 
-                objectFit: 'cover'
-              }}
-              whileHover={{ scale: 1.03 }}
+            <motion.div
+              className="image-wrapper"
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
-            />
+            >
+              <img 
+                src={aboutImage} 
+                alt="Bella Canto Pizzaria" 
+              />
+              <div className="image-overlay"></div>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
