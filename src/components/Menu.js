@@ -154,7 +154,6 @@ const Menu = () => {
             }}
           >
             {menuData[activeCategory].map((item, index) => {
-              const isLeftColumn = index % 2 === 0;
               return (
                 <motion.div
                   key={index}
