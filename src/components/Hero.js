@@ -65,7 +65,7 @@ const Hero = () => {
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
           onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
         >
-          <span>Scroll Down</span>
+          <span>{t('scrollDown')}</span>
           <div className="scroll-arrow">↓</div>
         </motion.div>
       </div>

@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Features from './components/Features';
 import Menu from './components/Menu';
+import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
@@ -20,6 +21,7 @@ function App() {
         <About />
         <Features />
         <Menu />
+        <Reviews />
         <Contact />
         <Footer />
       </div>

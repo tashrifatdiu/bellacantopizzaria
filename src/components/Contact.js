@@ -60,6 +60,26 @@ const Contact = () => {
                 </a>
               </div>
             </div>
+
+            {/* Google Maps Embed */}
+            <motion.div 
+              className="map-container"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.3847847847847!2d-9.1666667!3d38.7444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19338b0b0b0b0b%3A0x0!2sR.%20da%20Benefic%C3%AAncia%20107A%2C%201600-093%20Lisboa!5e0!3m2!1sen!2spt!4v1234567890"
+                width="100%"
+                height="300"
+                style={{ border: 0, borderRadius: '15px' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Bella Canto Pizzaria Location"
+              ></iframe>
+            </motion.div>
           </motion.div>
           <motion.div 
             className="reservation-form"

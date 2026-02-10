@@ -18,7 +18,7 @@ const Header = () => {
         <div className="container">
           <div className="logo">
             <img src={pizzaLogo} alt="Bella Canto Pizzaria Logo" className="logo-image" />
-            <h1>Bella Canto Pizzaria</h1>
+            <h1 className="logo-text">Bella Canto Pizzaria</h1>
           </div>
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             <a href="#home" onClick={() => setIsMenuOpen(false)}>{t('home')}</a>

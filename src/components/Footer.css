@@ -16,14 +16,14 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
 .footer-logo img {
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 0;
   object-fit: cover;
   object-position: 45% 45%;
   transform: scale(1.25);

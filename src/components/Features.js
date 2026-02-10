@@ -4,8 +4,8 @@ import './Features.css';
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Import remaining WhatsApp images
-import img6 from '../assets/images/WhatsApp Image 2026-02-10 at 1.21.21 AM (1).jpeg';
-import img7 from '../assets/images/WhatsApp Image 2026-02-10 at 1.21.21 AM.jpeg';
+import img6 from '../assets/images/WhatsApp Image 2026-02-10 at 1.21.18 AM.jpeg';
+import img7 from '../assets/images/WhatsApp Image 2026-02-10 at 1.21.19 AM.jpeg';
 import img8 from '../assets/images/WhatsApp Image 2026-02-10 at 1.21.22 AM (1).jpeg';
 import img9 from '../assets/images/WhatsApp Image 2026-02-10 at 1.21.22 AM.jpeg';
 import img10 from '../assets/images/WhatsApp Image 2026-02-10 at 1.21.23 AM.jpeg';

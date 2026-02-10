@@ -13,7 +13,6 @@ const Footer = () => {
           <div className="footer-section">
             <div className="footer-logo">
               <img src={pizzaLogo} alt="Bella Canto Logo" />
-              <h3>Bella Canto Pizzaria</h3>
             </div>
             <p>{t('authenticPizza')}</p>
             <p className="footer-address">R. da Beneficência, 107A<br />1600-093 Lisboa, Portugal</p>

@@ -22,6 +22,7 @@ export const translations = {
     heroTitle: "Bella Canto Pizzaria",
     heroSubtitle: "Authentic Italian Pizza in Lisboa",
     exploreMenu: "Explore Menu",
+    scrollDown: "Scroll Down",
     pizzaOf: "Pizza {current} of {total}",
     
     // About
@@ -37,6 +38,7 @@ export const translations = {
     pasta: "Pasta",
     salads: "Salads",
     desserts: "Desserts",
+    drinks: "Drinks",
     
     // Gallery
     gallery: "Our Gallery",
@@ -56,6 +58,10 @@ export const translations = {
     feature4Desc: "Traditional recipes passed down through generations of Italian cooking",
     feature5Title: "Cozy Atmosphere",
     feature5Desc: "Enjoy your meal in our warm and welcoming Italian-style dining space",
+    
+    // Reviews
+    customerReviews: "Customer Reviews",
+    reviewsSubtitle: "What Our Customers Say About Us",
     
     // Contact
     visitUs: "Visit Us",
@@ -90,6 +96,7 @@ export const translations = {
     heroTitle: "Bella Canto Pizzaria",
     heroSubtitle: "Pizza Italiana Autêntica em Lisboa",
     exploreMenu: "Explorar Menu",
+    scrollDown: "Descer",
     pizzaOf: "Pizza {current} de {total}",
     
     // About
@@ -105,6 +112,7 @@ export const translations = {
     pasta: "Massa",
     salads: "Saladas",
     desserts: "Sobremesas",
+    drinks: "Bebidas",
     
     // Gallery
     gallery: "A Nossa Galeria",
@@ -124,6 +132,10 @@ export const translations = {
     feature4Desc: "Receitas tradicionais transmitidas através de gerações de culinária italiana",
     feature5Title: "Ambiente Acolhedor",
     feature5Desc: "Desfrute da sua refeição no nosso espaço caloroso e acolhedor de estilo italiano",
+    
+    // Reviews
+    customerReviews: "Avaliações de Clientes",
+    reviewsSubtitle: "O Que os Nossos Clientes Dizem Sobre Nós",
     
     // Contact
     visitUs: "Visite-nos",
