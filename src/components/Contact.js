@@ -1,10 +1,69 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Contact = () => {
   const { t } = useLanguage();
+  const [formData, setFormData] = useState({
+    customer_name: '',
+    customer_email: '',
+    customer_phone: '',
+    reservation_date: '',
+    reservation_time: '',
+    number_of_guests: '',
+    special_requests: ''
+  });
+  const [sending, setSending] = useState(false);
+  const [message, setMessage] = useState({ type: '', text: '' });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setMessage({ type: '', text: '' });
+    setSending(true);
+
+    try {
+      const result = await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        formData,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      );
+
+      console.log('Email sent successfully:', result.text);
+      setMessage({ 
+        type: 'success', 
+        text: t('reservationSuccess') || 'Reservation request sent successfully! We will contact you soon.' 
+      });
+      
+      // Reset form
+      setFormData({
+        customer_name: '',
+        customer_email: '',
+        customer_phone: '',
+        reservation_date: '',
+        reservation_time: '',
+        number_of_guests: '',
+        special_requests: ''
+      });
+    } catch (error) {
+      console.error('Email send failed:', error);
+      setMessage({ 
+        type: 'error', 
+        text: t('reservationError') || 'Failed to send reservation. Please try again or call us directly.' 
+      });
+    } finally {
+      setSending(false);
+    }
+  };
   
   return (
     <section id="contact" className="contact">
@@ -89,21 +148,88 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <h3>{t('makeReservation')}</h3>
-            <form>
-              <input type="text" placeholder={t('yourName')} required />
-              <input type="email" placeholder={t('email')} required />
-              <input type="tel" placeholder={t('phone')} required />
-              <input type="date" required />
-              <input type="time" required />
-              <select required>
+            
+            {message.text && (
+              <div className={`form-message ${message.type}`}>
+                {message.text}
+              </div>
+            )}
+            
+            <form onSubmit={handleSubmit}>
+              <input 
+                type="text" 
+                name="customer_name"
+                value={formData.customer_name}
+                onChange={handleChange}
+                placeholder={t('yourName')} 
+                required 
+                disabled={sending}
+              />
+              <input 
+                type="email" 
+                name="customer_email"
+                value={formData.customer_email}
+                onChange={handleChange}
+                placeholder={t('email')} 
+                required 
+                disabled={sending}
+              />
+              <input 
+                type="tel" 
+                name="customer_phone"
+                value={formData.customer_phone}
+                onChange={handleChange}
+                placeholder={t('phone')} 
+                required 
+                disabled={sending}
+              />
+              <input 
+                type="date" 
+                name="reservation_date"
+                value={formData.reservation_date}
+                onChange={handleChange}
+                required 
+                disabled={sending}
+                min={new Date().toISOString().split('T')[0]}
+              />
+              <input 
+                type="time" 
+                name="reservation_time"
+                value={formData.reservation_time}
+                onChange={handleChange}
+                required 
+                disabled={sending}
+              />
+              <select 
+                name="number_of_guests"
+                value={formData.number_of_guests}
+                onChange={handleChange}
+                required
+                disabled={sending}
+              >
                 <option value="">{t('partySize')}</option>
                 <option value="1">1 {t('person')}</option>
                 <option value="2">2 {t('people')}</option>
                 <option value="3">3 {t('people')}</option>
                 <option value="4">4 {t('people')}</option>
-                <option value="5+">5+ {t('people')}</option>
+                <option value="5">5 {t('people')}</option>
+                <option value="6">6 {t('people')}</option>
+                <option value="7">7 {t('people')}</option>
+                <option value="8">8 {t('people')}</option>
+                <option value="9">9 {t('people')}</option>
+                <option value="10+">10+ {t('people')}</option>
               </select>
-              <button type="submit">{t('reserveTable')}</button>
+              <textarea
+                name="special_requests"
+                value={formData.special_requests}
+                onChange={handleChange}
+                placeholder={t('specialRequests') || 'Special requests (optional)'}
+                rows="3"
+                disabled={sending}
+              />
+              <button type="submit" disabled={sending}>
+                {sending ? (t('sending') || 'Sending...') : t('reserveTable')}
+              </button>
             </form>
           </motion.div>
         </div>

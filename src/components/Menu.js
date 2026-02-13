@@ -303,17 +303,17 @@ const Menu = () => {
 
   // Floating pizza images configuration - far outside menu, names adjusted for visibility
   const floatingPizzas = [
-    { src: pizzaAtum, name: 'Pizza Atum', position: { top: '5%', left: '-12%' }, nameAlign: 'right', delay: 0 },
+    { src: pizzaAtum, name: language === 'en' ? 'Pizza Atum' : 'Pizza de Atum', position: { top: '5%', left: '-12%' }, nameAlign: 'right', delay: 0 },
     { src: pizzaFunghi, name: 'Pizza Funghi', position: { top: '40%', right: '-12%' }, nameAlign: 'left', delay: 0.2 },
     { src: pizzaParma, name: 'Pizza Parma', position: { bottom: '15%', left: '-12%' }, nameAlign: 'right', delay: 0.4 },
-    { src: pizzaChorizo, name: 'Spicy Chorizo Pizza', position: { top: '70%', right: '-12%' }, nameAlign: 'left', delay: 0.6 }
+    { src: pizzaChorizo, name: language === 'en' ? 'Spicy Chorizo Pizza' : 'Pizza Chouriço Picante', position: { top: '70%', right: '-12%' }, nameAlign: 'left', delay: 0.6 }
   ];
 
   // Floating pasta images configuration
   const floatingPastas = [
     { src: pastaCarbonara, name: 'Carbonara Cremosa', position: { top: '8%', left: '-12%' }, nameAlign: 'right', delay: 0 },
-    { src: pastaPollo, name: 'Al Pollo Rosso', position: { top: '50%', right: '-12%' }, nameAlign: 'left', delay: 0.3 },
-    { src: pastaBolognese, name: 'Alla Bolognese', position: { bottom: '18%', left: '-12%' }, nameAlign: 'right', delay: 0.6 }
+    { src: pastaPollo, name: language === 'en' ? 'Al Pollo Rosso' : 'Ao Frango Rosso', position: { top: '50%', right: '-12%' }, nameAlign: 'left', delay: 0.3 },
+    { src: pastaBolognese, name: language === 'en' ? 'Alla Bolognese' : 'À Bolonhesa', position: { bottom: '18%', left: '-12%' }, nameAlign: 'right', delay: 0.6 }
   ];
 
   // Floating drink images configuration
@@ -327,23 +327,23 @@ const Menu = () => {
   // Floating dessert images configuration
   const floatingDesserts = [
     { src: dessertIceCream, name: 'Ben & Jerry\'s', position: { top: '12%', left: '-12%' }, nameAlign: 'right', delay: 0 },
-    { src: dessertNutellaBanana, name: 'Nutella Banana Pizza', position: { top: '55%', right: '-12%' }, nameAlign: 'left', delay: 0.3 },
+    { src: dessertNutellaBanana, name: language === 'en' ? 'Nutella Banana Pizza' : 'Pizza Nutella Banana', position: { top: '55%', right: '-12%' }, nameAlign: 'left', delay: 0.3 },
     { src: dessertTiramisu, name: 'Tiramisu', position: { bottom: '20%', left: '-12%' }, nameAlign: 'right', delay: 0.6 }
   ];
 
   // Floating starter images configuration
   const floatingStarters = [
     { src: starterBurrata, name: 'Burrata', position: { top: '8%', left: '-12%' }, nameAlign: 'right', delay: 0 },
-    { src: starterGarlicBread, name: 'Garlic Bread', position: { top: '45%', right: '-12%' }, nameAlign: 'left', delay: 0.2 },
-    { src: starterCheeseStick, name: 'Cheese Stick', position: { bottom: '22%', left: '-12%' }, nameAlign: 'right', delay: 0.4 },
-    { src: starterShrimpFinger, name: 'Shrimp Finger', position: { top: '72%', right: '-12%' }, nameAlign: 'left', delay: 0.6 }
+    { src: starterGarlicBread, name: language === 'en' ? 'Garlic Bread' : 'Pão de Alho', position: { top: '45%', right: '-12%' }, nameAlign: 'left', delay: 0.2 },
+    { src: starterCheeseStick, name: language === 'en' ? 'Cheese Stick' : 'Palito de Queijo', position: { bottom: '22%', left: '-12%' }, nameAlign: 'right', delay: 0.4 },
+    { src: starterShrimpFinger, name: language === 'en' ? 'Shrimp Finger' : 'Dedo de Camarão', position: { top: '72%', right: '-12%' }, nameAlign: 'left', delay: 0.6 }
   ];
 
   // Floating salad images configuration
   const floatingSalads = [
-    { src: saladGreek, name: 'Greek Salad', position: { top: '10%', left: '-12%' }, nameAlign: 'right', delay: 0 },
-    { src: saladCaprese, name: 'Caprese Salad', position: { top: '50%', right: '-12%' }, nameAlign: 'left', delay: 0.3 },
-    { src: saladTuna, name: 'Tuna Salad', position: { bottom: '18%', left: '-12%' }, nameAlign: 'right', delay: 0.6 }
+    { src: saladGreek, name: language === 'en' ? 'Greek Salad' : 'Salada Grega', position: { top: '10%', left: '-12%' }, nameAlign: 'right', delay: 0 },
+    { src: saladCaprese, name: language === 'en' ? 'Caprese Salad' : 'Salada Caprese', position: { top: '50%', right: '-12%' }, nameAlign: 'left', delay: 0.3 },
+    { src: saladTuna, name: language === 'en' ? 'Tuna Salad' : 'Salada de Atum', position: { bottom: '18%', left: '-12%' }, nameAlign: 'right', delay: 0.6 }
   ];
 
   // Get the appropriate floating images based on category
