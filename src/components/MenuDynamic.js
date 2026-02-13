@@ -67,7 +67,7 @@ const MenuDynamic = () => {
       const response = await databases.listDocuments(
         databaseId,
         categoriesCollectionId,
-        [Query.orderAsc('order')]
+        [Query.orderAsc('order'), Query.limit(5000)]
       );
       setCategories(response.documents);
       if (response.documents.length > 0) {
@@ -88,7 +88,8 @@ const MenuDynamic = () => {
         [
           Query.equal('categoryId', categoryId),
           Query.equal('available', true),
-          Query.orderAsc('order')
+          Query.orderAsc('order'),
+          Query.limit(5000)
         ]
       );
       setMenuItems(response.documents);

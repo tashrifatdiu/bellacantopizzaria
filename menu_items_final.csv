@@ -1,0 +1,104 @@
+categoryId,nameEn,namePt,descriptionEn,descriptionPt,price,order,available
+698fa3af50e6bb98f757,Garlic Bread with Cheese,Pão de Alho com Queijo,100% mozzarella, garlic, oregano, olive oil,100% mozzarella, alho, orégãos, azeite,2.50€,10,true
+698fa3af50e6bb98f757,Avocado Toast,Torrada de Abacate,"Toast, avocado, feta, olive oil, salt, lemon, pepper","Torrada, abacate, feta, azeite, sal, limão, pimenta",6.00€,20,true
+698fa3af50e6bb98f757,Garlic Finger with Cheese,Dedo de Alho com Queijo,"Cheese, garlic, butter, oregano","Queijo, alho, manteiga, orégãos",6.50€,30,true
+698fa3af50e6bb98f757,Burrata,Burrata,"Burrata 120gm cheese, arugula, cherry tomatoes, olive oil, oregano","Queijo burrata 120gm, rúcula, tomate cereja, azeite, orégãos",6.50€,40,true
+698fa3af50e6bb98f757,Pepperoni Roll (6 units),Rolo de Pepperoni (6 unidades),"Pepperoni, mozzarella, olive oil, oregano","Pepperoni, mozzarella, azeite, orégãos",6.99€,50,true
+698fa3af50e6bb98f757,Cheese Stick,Palito de Queijo,"Made capatu, mozzarella, basil, oregano","Feito capatu, mozzarella, manjericão, orégãos",6.99€,60,true
+698fa3af50e6bb98f757,Shrimp Finger,Dedo de Camarão,"Tomato sauce, mozzarella, shrimp, and mayonnaise","Molho de tomate, mozzarella, camarão e maionese",7.99€,70,true
+698fa3af50e6bb98f757,Bruschetta Prosciutto,Bruschetta Prosciutto,"Toasted bread, ricotta cheese, ham, basil pesto","Pão torrado, queijo ricota, presunto, pesto de manjericão",4.99€,80,true
+698fa3af50e6bb98f757,Bruschetta Milano,Bruschetta Milano,"Toasted buffalo bread, rocket, cherry tomatoes, fresh","Pão de búfala torrado, rúcula, tomate cereja, fresco",4.99€,90,true
+698fa3af50edc62099f5,Pizza Marinara with Buffalo,Pizza Marinara com Búfala,"Caputo flour, tomato sauce, cherry tomato, buffalo, basil, oregano","Farinha Caputo, molho de tomate, tomate cereja, búfala, manjericão, orégãos",M: 8.50€ / R: 9.50€,10,true
+698fa3af50edc62099f5,Queijoes Sabor Special,Queijões Sabor Especial,"Caputo flour, tomato sauce, fresh mozzarella, gorgonzola, taleggio, parmesan, oregano","Farinha Caputo, molho de tomate, mozzarella fresca, gorgonzola, taleggio, parmesão, orégãos",M: 8.50€ / R: 9.50€,20,true
+698fa3af50edc62099f5,Pizza Margherita de Speciale,Pizza Margherita Especial,"Caputo flour, tomato sauce, mozzarella, Parmesan, Basil, oregano","Farinha Caputo, molho de tomate, mozzarella, parmesão, manjericão, orégãos",M: 8.50€ / R: 9.50€,30,true
+698fa3af50edc62099f5,Funghi Pizza,Pizza Funghi,"Caputo flour, tomato sauce, mozzarella, mushrooms, olives, oregano","Farinha Caputo, molho de tomate, mozzarella, cogumelos, azeitonas, orégãos",M: 8.50€ / R: 9.50€,40,true
+698fa3af50edc62099f5,Seafood Pizza,Pizza de Frutos do Mar,"Caputo flour, tomato sauce, mozzarella, shrimp, pepper, parsley, oregano, parmesan","Farinha Caputo, molho de tomate, mozzarella, camarão, pimento, salsa, orégãos, parmesão",M: 8.50€ / R: 9.50€,50,true
+698fa3af50edc62099f5,Prosciutto and Funghi Pizza,Pizza Prosciutto e Funghi,"Caputo flour, tomato sauce, mozzarella, prosciutto, mushrooms, oregano","Farinha Caputo, molho de tomate, mozzarella, prosciutto, cogumelos, orégãos",M: 8.50€ / R: 9.50€,60,true
+698fa3af50edc62099f5,Tuna Pizza,Pizza de Atum,"Caputo flour, tomato sauce, mozzarella, tuna, red onion, mixed pepper, olives, oregano","Farinha Caputo, molho de tomate, mozzarella, atum, cebola roxa, pimento misto, azeitonas, orégãos",M: 8.50€ / R: 9.50€,70,true
+698fa3af50edc62099f5,Pizza Salami,Pizza Salame,"Caputo flour, tomato sauce, mozzarella, salami, mushrooms, olives, mixed pepper, oregano","Farinha Caputo, molho de tomate, mozzarella, salame, cogumelos, azeitonas, pimento misto, orégãos",M: 8.50€ / R: 9.50€,80,true
+698fa3af50edc62099f5,Pizza Bacon,Pizza Bacon,"Caputo flour, tomato sauce, mozzarella, bacon, pineapple, oregano","Farinha Caputo, molho de tomate, mozzarella, bacon, ananás, orégãos",M: 8.50€ / R: 9.50€,90,true
+698fa3af50edc62099f5,Pizza Pepperoni,Pizza Pepperoni,"Caputo flour, tomato sauce, mozzarella, pepperoni, red onion, oregano","Farinha Caputo, molho de tomate, mozzarella, pepperoni, cebola roxa, orégãos",M: 8.50€ / R: 9.50€,100,true
+698fa3af50edc62099f5,Portuguese Pizza and Speciale,Pizza Portuguesa Especial,"Caputo flour, tomato sauce, mozzarella, ham, heart of palm, boiled egg, red onion, olives, oregano","Farinha Caputo, molho de tomate, mozzarella, presunto, palmito, ovo cozido, cebola roxa, azeitonas, orégãos",M: 8.50€ / R: 9.50€,110,true
+698fa3af50edc62099f5,BELLA CANTO and Special,BELLA CANTO Especial,"Caputo flour, tomato sauce, mozzarella, Bacon, chicken, corn, fresh mozzarella, basil, oregano","Farinha Caputo, molho de tomate, mozzarella, bacon, frango, milho, mozzarella fresca, manjericão, orégãos",M: 8.50€ / R: 9.50€,120,true
+698fa3af50edc62099f5,Neapolitan Pizza,Pizza Napolitana,"Caputo flour, tomato sauce, mozzarella, capers, anchovies, oregano","Farinha Caputo, molho de tomate, mozzarella, alcaparras, anchovas, orégãos",M: 8.50€ / R: 9.50€,130,true
+698fa3af50edc62099f5,Pizza Boogie Vegan,Pizza Boogie Vegana,"Caputo flour, tomato sauce, mozzarella, mixed vegetables, corn, tomato, olives, oregano","Farinha Caputo, molho de tomate, mozzarella, vegetais mistos, milho, tomate, azeitonas, orégãos",M: 8.50€ / R: 9.50€,140,true
+698fa3af50edc62099f5,Pizza Dia Vola,Pizza Dia Vola,"Caputo flour, tomato sauce, mozzarella, fresh mozzarella, spicy chorizo, Parmesan, basil, oregano","Farinha Caputo, molho de tomate, mozzarella, mozzarella fresca, chouriço picante, parmesão, manjericão, orégãos",M: 8.50€ / R: 9.50€,150,true
+698fa3af50edc62099f5,Pizza Amanti de Pollo,Pizza Amanti de Pollo,"Caputo flour, tomato sauce, mozzarella, chicken, corn, olives, oregano","Farinha Caputo, molho de tomate, mozzarella, frango, milho, azeitonas, orégãos",M: 8.50€ / R: 9.50€,160,true
+698fa3af50edc62099f5,Pizza Buffalo Trufi,Pizza Buffalo Trufi,"Caputo flour, tomato sauce, mozzarella, buffalo, pesto, oregano","Farinha Caputo, molho de tomate, mozzarella, búfala, pesto, orégãos",M: 8.50€ / R: 9.50€,170,true
+698fa3af50edc62099f5,Pizza Parma,Pizza Parma,"Caputo flour, tomato sauce, mozzarella, arugula, pomodorini, ham, Olives, oregano","Farinha Caputo, molho de tomate, mozzarella, rúcula, pomodorini, presunto, azeitonas, orégãos",M: 8.50€ / R: 9.50€,180,true
+698fa3af50edc62099f5,Pizza Quattro (4) Farmaggi,Pizza Quattro Formaggi,"Caputo flour, tomato sauce, mozzarella, gorgonzola, parmesan, taleggio, oregano","Farinha Caputo, molho de tomate, mozzarella, gorgonzola, parmesão, taleggio, orégãos",M: 8.50€ / R: 9.50€,190,true
+698fa3af50edc62099f5,Hawaiian Pizza,Pizza Havaiana,"Caputo flour, tomato sauce, mozzarella, pineapple, cream, ham, oregano","Farinha Caputo, molho de tomate, mozzarella, ananás, natas, presunto, orégãos",M: 8.50€ / R: 9.50€,200,true
+698fa3af50edc62099f5,Spicy Chorizo Pizza,Pizza Chouriço Picante,"Caputo flour, tomato sauce, mozzarella, chorizo, oregano","Farinha Caputo, molho de tomate, mozzarella, chouriço, orégãos",M: 8.50€ / R: 9.50€,210,true
+698fa3af50edc62099f5,Pizza Burata,Pizza Burrata,"Caputo flour, tomato sauce, fresh mozzarella, pomodorini, Arugula, burrata cheese, cherry tomato, oregano","Farinha Caputo, molho de tomate, mozzarella fresca, pomodorini, rúcula, queijo burrata, tomate cereja, orégãos",M: 8.50€ / R: 9.50€,220,true
+698fa3af50edc62099f5,Pizza Bologna XXX,Pizza Bologna XXX,"Caputo flour, tomato sauce, mozzarella, bolognese, onion, oregano","Farinha Caputo, molho de tomate, mozzarella, bolonhesa, cebola, orégãos",M: 8.50€ / R: 9.50€,230,true
+698fa3af50edc62099f5,Pizza Cinco(5) Stagioni,Pizza Cinco Estações,"Caputo flour, tomato sauce, mozzarella, mushrooms, ham, capers, artichokes, anchovies, oregano","Farinha Caputo, molho de tomate, mozzarella, cogumelos, presunto, alcaparras, alcachofras, anchovas, orégãos",M: 8.50€ / R: 9.50€,240,true
+698fa3af50edc62099f5,Pizza Pesto,Pizza Pesto,"Caputo flour, tomato sauce, mozzarella, zucchini, pesto, basil, oregano","Farinha Caputo, molho de tomate, mozzarella, abobrinha, pesto, manjericão, orégãos",M: 8.50€ / R: 9.50€,250,true
+698fa3af50edc62099f5,Shakshuka Pizza,Pizza Shakshuka,"Caputo flour, tomato sauce, mozzarella, 3 eggs, parsley, feta cheese, parmesan, oregano","Farinha Caputo, molho de tomate, mozzarella, 3 ovos, salsa, queijo feta, parmesão, orégãos",M: 8.50€ / R: 9.50€,260,true
+698fa3af50edc62099f5,Italian Pizza,Pizza Italiana,"Caputo flour, tomato sauce, mozzarella, prosciutto, fresh mozzarella, arugula, cherry tomato, parmesan shavings, oregano","Farinha Caputo, molho de tomate, mozzarella, prosciutto, mozzarella fresca, rúcula, tomate cereja, lascas de parmesão, orégãos",M: 8.50€ / R: 9.50€,270,true
+698fa3af50edc62099f5,Chicken and Piri Piri Pizza,Pizza Frango e Piri Piri,"Caputo flour, tomato sauce, mozzarella, chicken, piri piri, red onion, olives, mixed pepper, oregano","Farinha Caputo, molho de tomate, mozzarella, frango, piri piri, cebola roxa, azeitonas, pimento misto, orégãos",M: 8.50€ / R: 9.50€,280,true
+698fa3af50edc62099f5,Ricotta Pizza,Pizza Ricota,"Caputo flour, tomato sauce, mozzarella, spinach, onion, ricotta, parmesan, oregano","Farinha Caputo, molho de tomate, mozzarella, espinafre, cebola, ricota, parmesão, orégãos",M: 8.50€ / R: 9.50€,290,true
+698fa3af50edc62099f5,Pizza Bella Mortadela,Pizza Bella Mortadela,"Caputo flour, Tomato sauce, buffalo cheese, mortadella, pistachio, oregano","Farinha Caputo, molho de tomate, queijo búfala, mortadela, pistache, orégãos",M: 8.50€ / R: 9.50€,300,true
+698fa3af50edc62099f5,Piri-Piri Pizza,Pizza Piri-Piri,"Caputo flour, tomato sauce, mozzarella, shrimp, peppers, piri-piri, garlic, red onion, coriander, fresh arugula, oregano","Farinha Caputo, molho de tomate, mozzarella, camarão, pimentos, piri-piri, alho, cebola roxa, coentro, rúcula fresca, orégãos",M: 8.50€ / R: 9.50€,310,true
+698fa3af50edc62099f5,Specie Jalapeno,Pizza Jalapeño Especial,"Caputo flour, tomato sauce, mozzarella, jalapeno, mixed pepper, garlic, red onion, oregano","Farinha Caputo, molho de tomate, mozzarella, jalapeño, pimento misto, alho, cebola roxa, orégãos",M: 8.50€ / R: 9.50€,320,true
+698fa3af50edc62099f5,Calzone Napoltano,Calzone Napolitano,"Caputo flour, tomato sauce, mozzarella, parmesan, spicy chorizo, basil, oregano","Farinha Caputo, molho de tomate, mozzarella, parmesão, chouriço picante, manjericão, orégãos",8.99€,330,true
+698fa3af50edc62099f5,Calzone Classico,Calzone Clássico,"Caputo flour, tomato sauce, mozzarella, ham, mushrooms, olive oil, basil, oregano","Farinha Caputo, molho de tomate, mozzarella, presunto, cogumelos, azeite, manjericão, orégãos",8.99€,340,true
+698fa3af50edc62099f5,Calzone Special,Calzone Especial,"Caputo flour, tomato sauce, mozzarella, shrimp, basil, garlic, truffle olive oil, oregano","Farinha Caputo, molho de tomate, mozzarella, camarão, manjericão, alho, azeite de trufa, orégãos",8.99€,350,true
+698fa3af50edc62099f5,Vegetarian Calzone,Calzone Vegetariano,"Caputo flour, tomato sauce, mozzarella, spinach, parmesan, mushrooms, oregano","Farinha Caputo, molho de tomate, mozzarella, espinafre, parmesão, cogumelos, orégãos",8.99€,360,true
+698fa3af50edc62099f5,Pepperoni and Bacon Pizza,Pizza Pepperoni e Bacon,"Half pepperoni and half bacon - Caputo flour, tomato sauce, mozzarella, pepperoni, red onion, oregano, bacon, pineapple","Metade pepperoni e metade bacon - Farinha Caputo, molho de tomate, mozzarella, pepperoni, cebola roxa, orégãos, bacon, ananás",10.99€,370,true
+698fa3af50edc62099f5,Tom and Jerry Pizza,Pizza Tom e Jerry,"Pizza with nutella m&m and pizza diavola - Nutella pizza and m&m with caputo flour, tomato sauce, mozzarella, cream, vermicelli, colorful, basil","Pizza com nutella m&m e pizza diavola - Pizza nutella e m&m com farinha caputo, molho de tomate, mozzarella, natas, vermicelli, colorido, manjericão",10.99€,380,true
+698fa3af50edc62099f5,Pizza Family Combo,Pizza Combo Família,"Portuguese pizza and Italian pizza - Caputo flour, tomato sauce, mozzarella, prosciutto, heart of palm, boiled egg, onion, olives, parmesan","Pizza portuguesa e italiana - Farinha Caputo, molho de tomate, mozzarella, prosciutto, palmito, ovo cozido, cebola, azeitonas, parmesão",10.99€,390,true
+698fa3af50efafbd9314,Tagliatelle Carbonara,Tagliatelle Carbonara,"Tagliatelle pasta, fresh cream, egg, smoked veal bacon, basil, parmesan","Massa tagliatelle, natas frescas, ovo, bacon de vitela fumado, manjericão, parmesão",8.50€,10,true
+698fa3af50efafbd9314,Spaghetti Bolognese,Esparguete à Bolonhesa,"Ground beef, tomato San Marzano, basil, parmesan","Carne picada, tomate San Marzano, manjericão, parmesão",8.00€,20,true
+698fa3af50efafbd9314,Spaghetti Chicken,Esparguete com Frango,"Marinated chicken fillet, San Marzano tomatoes, basil, parmesan","Filé de frango marinado, tomate San Marzano, manjericão, parmesão",8.00€,30,true
+698fa3af50efafbd9314,Spaghetti all in shape,Esparguete all in shape,"Fresh cream, Mushrooms, gorgonzola, Parmesan, basil","Natas frescas, cogumelos, gorgonzola, parmesão, manjericão",8.00€,40,true
+698fa3af50efafbd9314,Spaghetti Mushroom,Esparguete com Cogumelos,"Spaghetti pasta, mushrooms, cream sauce, parmesan, basil","Massa esparguete, cogumelos, molho de natas, parmesão, manjericão",9.50€,50,true
+698fa3af50efafbd9314,Tagliatelle Shrimp,Tagliatelle com Camarão,"Tagliatelle Broccoli and sauteed shrimp, cream sauce, parmesan, basil","Tagliatelle brócolos e camarão salteado, molho de natas, parmesão, manjericão",8.00€,60,true
+698fa3af50efafbd9314,Tagliatelle Vegetarian,Tagliatelle Vegetariana,"Broccoli, zucchini, mushrooms, carrots and cherry tomatoes, parmesan, basil","Brócolos, abobrinha, cogumelos, cenoura e tomate cereja, parmesão, manjericão",8.00€,70,true
+698fa3af50efafbd9314,Penne Pomodora Pasta,Penne Pomodoro,"Penne, Tomato Sauce, Cherry Tomatoes, Parmesan, Basil, Oregano","Penne, molho de tomate, tomate cereja, parmesão, manjericão, orégãos",8.00€,80,true
+698fa3af50efafbd9314,Gnocchi Pollo,Gnocchi com Frango,"Cream sauce, chicken, mozzarella, parsley, basil","Molho de natas, frango, mozzarella, salsa, manjericão",8.90€,90,true
+698fa3af50efafbd9314,Gnocchi Crème,Gnocchi Creme,"Cream sauce, black pepper, parsley, basil, oregano","Molho de natas, pimenta preta, salsa, manjericão, orégãos",7.99€,100,true
+698fa3af50efafbd9314,Gnocchi Bolognese,Gnocchi à Bolonhesa,"Tomato sauce, meat, mozzarella, parsley, basil","Molho de tomate, carne, mozzarella, salsa, manjericão",8.90€,110,true
+698fa3af50efafbd9314,Tortelloni Burrata,Tortelloni Burrata,"Tomato sauce, burrata, parsley, oregano","Molho de tomate, burrata, salsa, orégãos",9.90€,120,true
+698fa3af50efafbd9314,Tortelloni Broccoli and Shrimp,Tortelloni Brócolos e Camarão,"Cream sauce, broccoli, shrimp, parsley, oregano","Molho de natas, brócolos, camarão, salsa, orégãos",8.90€,130,true
+698fa3af50efafbd9314,Tortelloni Chicken,Tortelloni com Frango,"Cream sauce, mushrooms, chicken, parsley, basil","Molho de natas, cogumelos, frango, salsa, manjericão",8.90€,140,true
+698fa3af50efafbd9314,Salmonella Rosy,Salmão Rosy,"Tomato sauce, cream, salmon, parmesan, oregano, basil","Molho de tomate, natas, salmão, parmesão, orégãos, manjericão",10.99€,150,true
+698fa3af50efafbd9314,Beans Risotto,Risotto de Feijão,"Arborio rice, chicken, red and black beans, onion, parmesan","Arroz arborio, frango, feijão vermelho e preto, cebola, parmesão",6.99€,160,true
+698fa3af50efafbd9314,Chicken Risotto,Risotto de Frango,"Arborio rice, chicken, corn, onion, parmesan","Arroz arborio, frango, milho, cebola, parmesão",6.99€,170,true
+698fa3af50efafbd9314,Veg Shrimp Risotto,Risotto de Camarão Vegetariano,"Arborio rice, shrimp, spinach, parmesan","Arroz arborio, camarão, espinafre, parmesão",7.50€,180,true
+698fa3af50efafbd9314,Cheesy and Walnut Risotto,Risotto de Queijo e Nozes,"Arborio rice, gorgonzola, walnuts, parmesan","Arroz arborio, gorgonzola, nozes, parmesão",6.50€,190,true
+698fa3af50efafbd9314,Cherry Risotto,Risotto de Cereja,"Cherry tomatoes, red beans, basil","Tomate cereja, feijão vermelho, manjericão",6.50€,200,true
+698fa3af50efafbd9314,Broccoli Risotto,Risotto de Brócolos,"Mushrooms, tomatoes, pumpkin and broccoli, parmesan","Cogumelos, tomate, abóbora e brócolos, parmesão",6.50€,210,true
+698fa3af50efafbd9314,Mushroom Risotto,Risotto de Cogumelos,"Mushrooms, corn, onion, parmesan, parsley","Cogumelos, milho, cebola, parmesão, salsa",6.99€,220,true
+698fa3af50f11cb03dfd,Greek Salad,Salada Grega,"Tomato, cucumber, green pepper, red onion, olive, feta cheese","Tomate, pepino, pimento verde, cebola roxa, azeitona, queijo feta",7.00€,10,true
+698fa3af50f11cb03dfd,Avocado Salad,Salada de Abacate,"Lettuce, cherry tomatoes, chilli, coriander, avocado, fried red onion seasoning sauce","Alface, tomate cereja, malagueta, coentro, abacate, molho de cebola roxa frita",7.99€,20,true
+698fa3af50f11cb03dfd,Caprese Salad,Salada Caprese,"Tomato, buffalo mozzarella, basil, olive oil, oregano","Tomate, mozzarella de búfala, manjericão, azeite, orégãos",6.50€,30,true
+698fa3af50f11cb03dfd,Mixed Salad,Salada Mista,"Lettuce, tomato, cucumber, red onion, seasoning sauce","Alface, tomate, pepino, cebola roxa, molho de tempero",6.50€,40,true
+698fa3af50f11cb03dfd,Tuna Salad,Salada de Atum,"Lettuce, tomato, fennel, grilled pineapple, tuna","Alface, tomate, funcho, ananás grelhado, atum",6.50€,50,true
+698fa3af50f26a5e524c,Pizza Nutella,Pizza Nutella,Pizza with nutella,Pizza com nutella,5.99€,10,true
+698fa3af50f26a5e524c,Nutella and M&M Pizza,Pizza Nutella e M&M,"Pizza, nutella and m&m","Pizza, nutella e m&m",6.50€,20,true
+698fa3af50f26a5e524c,Nutella and Banana Pizza,Pizza Nutella e Banana,Pizza with nutella and banana,Pizza com nutella e banana,6.50€,30,true
+698fa3af50f26a5e524c,Lagarta Pizza,Pizza Lagarta,"Pizza, Nutella, M&M","Pizza, Nutella, M&M",6.50€,40,true
+698fa3af50f26a5e524c,Strawberry Pizza,Pizza de Morango,"Pizza with nutella, strawberry, banana","Pizza com nutella, morango, banana",6.50€,50,true
+698fa3af50f26a5e524c,Ben & Jerry's Chocolate Fudge Brownie,Ben & Jerry's Chocolate Fudge Brownie,Chocolate Fudge Brownie ice cream,Gelado Chocolate Fudge Brownie,100ml: 3.50€ / 465ml: 6.50€,60,true
+698fa3af50f26a5e524c,Ben & Jerry's Peanut Butter Cup,Ben & Jerry's Peanut Butter Cup,Peanut Butter Cup ice cream,Gelado Peanut Butter Cup,100ml: 3.50€ / 465ml: 6.50€,70,true
+698fa3af50f26a5e524c,Ben & Jerry's Cookie Dough,Ben & Jerry's Cookie Dough,Cookie Dough ice cream,Gelado Cookie Dough,100ml: 3.50€ / 465ml: 6.50€,80,true
+698fa3af50f26a5e524c,Ben & Jerry's Strawberry Cheesecake,Ben & Jerry's Strawberry Cheesecake,Strawberry Cheesecake ice cream,Gelado Strawberry Cheesecake,100ml: 3.50€ / 465ml: 6.50€,90,true
+698fa3af50f37570746b,Coca-Cola,Coca-Cola,Coca-Cola,Coca-Cola,33cl: 1.50€ / 1.5L: 3.50€,10,true
+698fa3af50f37570746b,Coca-Cola Zero,Coca-Cola Zero,Coca-Cola Zero,Coca-Cola Zero,33cl: 1.50€ / 1.5L: 3.50€,20,true
+698fa3af50f37570746b,Fanta Pineapple,Fanta Ananás,Fanta Pineapple,Fanta Ananás,33cl: 1.50€,30,true
+698fa3af50f37570746b,Fanta Orange,Fanta Laranja,Fanta Orange,Fanta Laranja,33cl: 1.50€,40,true
+698fa3af50f37570746b,Fanta Passion Fruit,Fanta Maracujá,Fanta Passion Fruit,Fanta Maracujá,33cl: 1.50€,50,true
+698fa3af50f37570746b,7up,7up,7up,7up,33cl: 1.50€,60,true
+698fa3af50f37570746b,Water,Água,Water,Água,50cl: 1.30€ / 1.5L: 2.50€,70,true
+698fa3af50f37570746b,Water Tônica,Água Tónica,Tonic Water,Água Tónica,1.50€,80,true
+698fa3af50f37570746b,Ice Tea Lemon,Ice Tea Limão,Ice Tea Lemon,Ice Tea Limão,33cl: 1.50€,90,true
+698fa3af50f37570746b,Ice Tea Mango,Ice Tea Manga,Ice Tea Mango,Ice Tea Manga,33cl: 1.50€,100,true
+698fa3af50f37570746b,Ice Tea Peach,Ice Tea Pêssego,Ice Tea Peach,Ice Tea Pêssego,33cl: 1.50€,110,true
+698fa3af50f37570746b,Guarana,Guaraná,Guarana,Guaraná,33cl: 1.50€,120,true
+698fa3af50f37570746b,Red Bull,Red Bull,Red Bull Energy Drink,Red Bull Energy Drink,25cl: 2.50€,130,true
+698fa3af50f37570746b,Orange Juice,Sumo de Laranja,Orange Juice,Sumo de Laranja,33cl: 1.50€,140,true
+698fa3af50f37570746b,Pineapple Juice,Sumo de Ananás,Pineapple Juice,Sumo de Ananás,33cl: 1.50€,150,true
+698fa3af50f37570746b,Lipton Mango,Lipton Manga,Lipton Mango,Lipton Manga,33cl: 1.50€,160,true
+698fa3af50f37570746b,Lipton Lemon,Lipton Limão,Lipton Lemon,Lipton Limão,33cl: 1.50€,170,true
+698fa3af50f37570746b,Pedras com gas,Pedras com gás,Sparkling Water Pedras,Água com gás Pedras,33cl: 1.50€,180,true
+698fa3af50f37570746b,Coffee,Café,Coffee,Café,0.80€,190,true

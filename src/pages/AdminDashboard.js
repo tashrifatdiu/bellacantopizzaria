@@ -48,14 +48,14 @@ const AdminDashboard = () => {
         const response = await databases.listDocuments(
           databaseId,
           categoriesCollectionId,
-          [Query.orderAsc('order')]
+          [Query.orderAsc('order'), Query.limit(5000)]
         );
         setCategories(response.documents);
       } else {
         const response = await databases.listDocuments(
           databaseId,
           menuItemsCollectionId,
-          [Query.orderAsc('order')]
+          [Query.orderAsc('order'), Query.limit(5000)]
         );
         setMenuItems(response.documents);
       }

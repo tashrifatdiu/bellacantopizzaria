@@ -1,0 +1,7 @@
+name,nameEn,namePt,description,imageUrl,order,available
+Starters,Starters,Entradas,Delicious appetizers to start your meal,https://images.unsplash.com/photo-1541529086526-db283c563270?w=800&q=80,10,true
+Pizza,Pizza,Pizza,Authentic Italian pizzas,https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80,20,true
+Pasta,Pasta,Massa,Fresh pasta dishes and risotto,https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800&q=80,30,true
+Salads,Salads,Saladas,Fresh and healthy salads,https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80,40,true
+Desserts,Desserts,Sobremesas,Sweet treats to end your meal,https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&q=80,50,true
+Drinks,Drinks,Bebidas,Refreshing beverages,https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=800&q=80,60,true
