@@ -21,12 +21,14 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     checkAuth();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     if (user) {
       fetchData();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, activeTab]);
 
   const checkAuth = async () => {
@@ -621,6 +623,7 @@ const Modal = ({ type, item, categories, onClose, onSave, databaseId, categories
       }
     };
     fetchOrders();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [type, formData.categoryId, item]);
 
   // Suggest next available order

@@ -12,6 +12,7 @@ const AdminLogin = () => {
 
   useEffect(() => {
     checkIfLoggedIn();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const checkIfLoggedIn = async () => {

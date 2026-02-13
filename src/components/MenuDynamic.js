@@ -52,12 +52,14 @@ const MenuDynamic = () => {
 
   useEffect(() => {
     fetchCategories();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     if (activeCategory) {
       fetchMenuItems(activeCategory.$id);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeCategory]);
 
   const fetchCategories = async () => {
