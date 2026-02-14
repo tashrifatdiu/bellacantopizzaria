@@ -67,8 +67,7 @@
   width: 35px;
   height: 35px;
   border-radius: 0;
-  object-fit: cover;
-  object-position: 45% 45%;
+  object-fit: contain;
   transform: scale(1.25);
 }
 
