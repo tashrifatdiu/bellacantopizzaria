@@ -87,12 +87,13 @@ const MenuDynamic = () => {
         menuItemsCollectionId,
         [
           Query.equal('categoryId', categoryId),
-          Query.equal('available', true),
           Query.orderAsc('order'),
           Query.limit(5000)
         ]
       );
-      setMenuItems(response.documents);
+      // Filter available items on the client side to ensure it works
+      const availableItems = response.documents.filter(item => item.available !== false);
+      setMenuItems(availableItems);
     } catch (error) {
       console.error('Error fetching menu items:', error);
       setMenuItems([]);
@@ -319,6 +320,11 @@ const MenuDynamic = () => {
                     ease: "easeOut"
                   }}
                 >
+                  {item.imageUrl && (
+                    <div className="menu-item-image">
+                      <img src={item.imageUrl} alt={language === 'en' ? item.nameEn : item.namePt} />
+                    </div>
+                  )}
                   <div className="item-header">
                     <h4>{language === 'en' ? item.nameEn : item.namePt}</h4>
                     <span className="price">{item.price}</span>

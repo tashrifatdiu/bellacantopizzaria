@@ -361,6 +361,31 @@
   box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
 }
 
+/* Select dropdown options styling */
+.form-group select option {
+  background: #1a1a1a;
+  color: white;
+  padding: 0.75rem;
+}
+
+/* For the filter select in menu items view */
+select {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+select option {
+  background: #1a1a1a;
+  color: white;
+  padding: 0.75rem;
+}
+
+.category-filter-select option {
+  background: #1a1a1a !important;
+  color: white !important;
+  padding: 0.75rem !important;
+}
+
 .form-group textarea {
   resize: vertical;
   min-height: 100px;

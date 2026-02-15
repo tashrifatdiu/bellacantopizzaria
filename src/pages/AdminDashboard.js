@@ -228,47 +228,165 @@ const CategoriesView = ({ categories, onAdd, onEdit, onDelete }) => (
   </div>
 );
 
-const MenuItemsView = ({ menuItems, categories, onAdd, onEdit, onDelete }) => (
-  <div className="data-view">
-    <div className="view-header">
-      <h2>Menu Items</h2>
-      <button onClick={onAdd} className="add-btn">+ Add New Menu Item</button>
-    </div>
-    <div className="data-grid">
-      {menuItems.map((item) => {
-        const category = categories.find(c => c.$id === item.categoryId);
-        return (
-          <div key={item.$id} className="data-card">
-            <h3>{item.nameEn}</h3>
-            <div className="card-meta">
-              <span>Portuguese: {item.namePt}</span>
-            </div>
-            <div className="card-meta">
-              <span>Category: {category?.name || category?.nameEn || 'Unknown'}</span>
-              <span>Price: {item.price}</span>
-            </div>
-            {item.descriptionEn && (
-              <p className="item-description">{item.descriptionEn}</p>
-            )}
-            {item.descriptionPt && (
-              <p className="item-description" style={{fontSize: '0.95rem', color: 'rgba(255,255,255,0.6)'}}>
-                Portuguese: {item.descriptionPt}
-              </p>
-            )}
-            <div className="card-meta">
-              <span>Available: {item.available ? 'Yes ✓' : 'No ✗'}</span>
-              <span>Display Order: {item.order}</span>
-            </div>
-            <div className="card-actions">
-              <button onClick={() => onEdit(item)} className="edit-btn">Edit</button>
-              <button onClick={() => onDelete(item.$id)} className="delete-btn">Delete</button>
-            </div>
+const MenuItemsView = ({ menuItems, categories, onAdd, onEdit, onDelete }) => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
+
+  // Filter menu items based on search and category
+  const filteredItems = menuItems.filter(item => {
+    const matchesSearch = searchTerm === '' || 
+      item.nameEn?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.namePt?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.descriptionEn?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.descriptionPt?.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    const matchesCategory = selectedCategory === '' || item.categoryId === selectedCategory;
+    
+    return matchesSearch && matchesCategory;
+  });
+
+  return (
+    <div className="data-view">
+      <div className="view-header">
+        <h2>Menu Items</h2>
+        <button onClick={onAdd} className="add-btn">+ Add New Menu Item</button>
+      </div>
+      
+      {/* Search and Filter Controls */}
+      <div style={{
+        display: 'flex',
+        gap: '1rem',
+        marginBottom: '2rem',
+        flexWrap: 'wrap',
+        alignItems: 'center'
+      }}>
+        <div style={{ flex: '1 1 300px', minWidth: '250px' }}>
+          <input
+            type="text"
+            placeholder="Search by name or description..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '0.75rem 1rem',
+              background: 'rgba(255, 255, 255, 0.05)',
+              border: '1px solid rgba(212, 175, 55, 0.3)',
+              borderRadius: '8px',
+              color: '#fff',
+              fontSize: '1rem',
+              outline: 'none',
+              transition: 'all 0.3s ease'
+            }}
+            onFocus={(e) => {
+              e.target.style.borderColor = '#d4af37';
+              e.target.style.background = 'rgba(255, 255, 255, 0.08)';
+            }}
+            onBlur={(e) => {
+              e.target.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+              e.target.style.background = 'rgba(255, 255, 255, 0.05)';
+            }}
+          />
+        </div>
+        
+        <div style={{ flex: '0 1 250px', minWidth: '200px' }}>
+          <select
+            className="category-filter-select"
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '0.75rem 1rem',
+              background: 'rgba(255, 255, 255, 0.05)',
+              border: '1px solid rgba(212, 175, 55, 0.3)',
+              borderRadius: '8px',
+              color: '#fff',
+              fontSize: '1rem',
+              outline: 'none',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease'
+            }}
+            onFocus={(e) => {
+              e.target.style.borderColor = '#d4af37';
+              e.target.style.background = 'rgba(255, 255, 255, 0.08)';
+            }}
+            onBlur={(e) => {
+              e.target.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+              e.target.style.background = 'rgba(255, 255, 255, 0.05)';
+            }}
+          >
+            <option value="" style={{ background: '#1a1a1a', color: 'white' }}>All Categories</option>
+            {categories.map((cat) => (
+              <option key={cat.$id} value={cat.$id} style={{ background: '#1a1a1a', color: 'white' }}>
+                {cat.name || cat.nameEn}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {(searchTerm || selectedCategory) && (
+          <div style={{
+            color: 'rgba(255, 255, 255, 0.7)',
+            fontSize: '0.95rem',
+            padding: '0.5rem 0'
+          }}>
+            Showing {filteredItems.length} of {menuItems.length} items
           </div>
-        );
-      })}
+        )}
+      </div>
+
+      <div className="data-grid">
+        {filteredItems.length === 0 ? (
+          <div style={{
+            gridColumn: '1 / -1',
+            textAlign: 'center',
+            padding: '3rem',
+            color: 'rgba(255, 255, 255, 0.5)',
+            fontSize: '1.1rem'
+          }}>
+            {searchTerm || selectedCategory ? 'No items match your filters' : 'No menu items yet'}
+          </div>
+        ) : (
+          filteredItems.map((item) => {
+            const category = categories.find(c => c.$id === item.categoryId);
+            return (
+              <div key={item.$id} className="data-card">
+                {item.imageUrl && (
+                  <div className="card-image">
+                    <img src={item.imageUrl} alt={item.nameEn} />
+                  </div>
+                )}
+                <h3>{item.nameEn}</h3>
+                <div className="card-meta">
+                  <span>Portuguese: {item.namePt}</span>
+                </div>
+                <div className="card-meta">
+                  <span>Category: {category?.name || category?.nameEn || 'Unknown'}</span>
+                  <span>Price: {item.price}</span>
+                </div>
+                {item.descriptionEn && (
+                  <p className="item-description">{item.descriptionEn}</p>
+                )}
+                {item.descriptionPt && (
+                  <p className="item-description" style={{fontSize: '0.95rem', color: 'rgba(255,255,255,0.6)'}}>
+                    Portuguese: {item.descriptionPt}
+                  </p>
+                )}
+                <div className="card-meta">
+                  <span>Available: {item.available ? 'Yes ✓' : 'No ✗'}</span>
+                  <span>Display Order: {item.order}</span>
+                </div>
+                <div className="card-actions">
+                  <button onClick={() => onEdit(item)} className="edit-btn">Edit</button>
+                  <button onClick={() => onDelete(item.$id)} className="delete-btn">Delete</button>
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const SettingsView = ({ user }) => {
   const [currentPassword, setCurrentPassword] = useState('');
@@ -585,7 +703,7 @@ const Modal = ({ type, item, categories, onClose, onSave, databaseId, categories
   const [formData, setFormData] = useState(
     item || (type === 'category'
       ? { name: '', nameEn: '', namePt: '', description: '', imageUrl: '', order: 10 }
-      : { nameEn: '', namePt: '', descriptionEn: '', descriptionPt: '', price: '', categoryId: '', available: true, order: 10 })
+      : { nameEn: '', namePt: '', descriptionEn: '', descriptionPt: '', price: '', categoryId: '', imageUrl: '', available: true, order: 10 })
   );
   const [saving, setSaving] = useState(false);
   const [existingOrders, setExistingOrders] = useState([]);
@@ -852,6 +970,18 @@ const Modal = ({ type, item, categories, onClose, onSave, databaseId, categories
                 />
                 <small style={{color: 'rgba(255,255,255,0.6)', fontSize: '0.95rem'}}>
                   Type exactly how you want it to appear on the menu
+                </small>
+              </div>
+              <div className="form-group">
+                <label>Item Image URL (optional)</label>
+                <input
+                  type="url"
+                  value={formData.imageUrl || ''}
+                  onChange={(e) => setFormData({ ...formData, imageUrl: e.target.value })}
+                  placeholder="https://images.unsplash.com/... (optional)"
+                />
+                <small style={{color: 'rgba(255,255,255,0.6)', fontSize: '0.95rem'}}>
+                  Optional: Add an image URL to display with this menu item
                 </small>
               </div>
               <div className="form-group">
